@@ -1,0 +1,76 @@
+Design of Distributed Systems Practice
+ - Lecture + Practice + Consultation (5 hours per week)
+ - Taking part in lectures and practices is mandatory
+ - You may miss the practices max 3 times
+
+Practices:
+ - Tuesday, 8-10, 2.315 / Tuesday, 10:00-12:00
+ - Melinda Tóth / István Bozó
+ - tothmelinda@elte.hu / bozo_i@inf.elte.hu
+ - Office: 2.518
+
+Consultations:
+ - Wednesday 16-18
+ - not mandatory, but highly recommended
+ - First half of the consultation is a kind of common practicing, the second part is Q&A
+ - Anna Reale
+ - ot4kmb@inf.elte.hu
+ - Anna's office: Bogdanfy street
+
+Requirements for the DDS Pr:
+ - participating on the practices
+ - solving small/medium scale assignments (5-8 during the semester)
+ - passing on three tests (each min 60%)
+
+Remarks:
+ - each test includes a short quiz (5-10 questions) and an implementation task
+ - retaking the tests is possible at the end of the semester
+
+Grading systems:
+ - based on the results of the tests and assignments: (Test1+Test2+Test3+Assig)/4
+ - each test has to be at least 60%
+ - there is no minimum for assignments
+ - Grades: 1 for 0  - 59  %
+           2 for 60 - 69  %
+           3 for 70 - 79  %
+           4 for 80 - 89  %
+           5 for 90 - 100 %
+
+Course page:
+ - https://canvas.elte.hu
+ - slides
+ - practice files and logs
+ - assignments
+
+Syllabus:
+ - Properties of functional programming, Erlang history
+ - Erlang VM, Erlang Terms,  Modules and Functions in Erlang
+ - Variables and Pattern Matching, Operation on different data types
+ - Iterative evaluation: list comprehensions and recursive functions
+ - Conditional Evaluation, Lambda-expressions, Dynamic constructs
+ - Error handling, Records, Maps, Macros, Binary, IO
+ - Actor model and concurrency primitives
+ - Solving parallel, concurrent problems with Erlang
+ - Erlang's distribution
+ - Building distributed applications in Erlang
+ - OTP design patterns
+
+Reading (watching) materials:
+ - LernYouSomeErlang: http://learnyousomeerlang.com/content
+ - Book listed on http://www.erlang.org/doc.html
+ - Erlang MOOC (YouTube): https://www.youtube.com/watch?v=yZ-e6ZT4G6U&list=PLlML6SMLMRgAooeL26mW502jCgWikqx_n
+ - Master Class 1:  https://www.youtube.com/playlist?list=PLR812eVbehlwEArT3Bv3UfcM9wR3AEZb5
+ - Master Class 2:  https://www.youtube.com/playlist?list=PLR812eVbehlwq4qbqswOWH7NLKjodnTIn
+ - Master Class 3:  https://www.youtube.com/playlist?list=PLR812eVbehlx6vgWGf2FLHjkksAEDmFjc
+
+Others:
+ - http://www.erlang.org/
+ - https://erlangcentral.org/
+ - http://www.erlang-factory.com/
+ - http://www.youtube.com/watch?v=xrIjfIjssLE
+ - https://www.erlang-solutions.com/resources/download.html
+ - http://www.metabrew.com/article/rewriting-playdar-c-to-erlang-massive-savings
+ - http://files.meetup.com/8523992/2014-04-03%20Budapest%20Wherefore%20art%20thou%20Erlang.pdf
+ - https://www.jetbrains.com/help/idea/getting-started-with-erlang.html
+
+

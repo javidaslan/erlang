@@ -1,0 +1,173 @@
+teacher@nb:~$ erl
+Erlang/OTP 19 [erts-8.3] [source] [64-bit] [smp:4:4] [async-threads:10] [kernel-poll:false]
+
+Eshell V8.3  (abort with ^G)
+1> X = 2.
+2
+2> 
+2> X.
+2
+3> X = 3.
+** exception error: no match of right hand side value 3
+4> {A,A,X} = {1,1,2}.
+{1,1,2}
+5> A.
+1
+6> f(A).
+ok
+7> {A,A,X} = {1,1,3}.
+** exception error: no match of right hand side value 
+                    {1,1,3}
+8> A.
+* 1: variable 'A' is unbound
+9> {A,A,X} = {1,1,2,2}.
+** exception error: no match of right hand side value 
+                    {1,1,2,2}
+10> [X|Xs] = [1,2].
+** exception error: no match of right hand side value [1,
+                                                       2]
+11> f(X).          
+ok
+12> [X|Xs] = [1,2].
+[1,2]
+13> X.
+1
+14> Xs.
+[2]
+15> [X,Y|Xs] = [1,2].
+** exception error: no match of right hand side value [1,
+                                                       2]
+16> f().             
+ok
+17> [X,Y|Xs] = [1,2].
+[1,2]
+18> X.
+1
+19> Y.
+2
+20> Xs.
+[]
+21> [X,_|Xs] = [1,2].
+[1,2]
+22> _.
+* 1: variable '_' is unbound
+23> 
+23> [X, _Y |Xs] = [1,2].
+[1,2]
+24> _Y.
+2
+25> q().
+ok
+26> teacher@nb:~$ cd Desktop/
+teacher@nb:~/Desktop$ erlc first.erl
+teacher@nb:~/Desktop$ erl
+Erlang/OTP 19 [erts-8.3] [source] [64-bit] [smp:4:4] [async-threads:10] [kernel-poll:false]
+
+Eshell V8.3  (abort with ^G)
+1> c(first).
+{ok,first}
+2> fi
+file              file_io_server    file_server       filename          
+first             
+2> first:module_info().
+[{module,first},
+ {exports,[{module_info,0},{module_info,1}]},
+ {attributes,[{vsn,[2801441286791094333642441933099910335]}]},
+ {compile,[{options,[]},
+           {version,"7.0.4"},
+           {source,"/home/teacher/Desktop/first.erl"}]},
+ {md5,<<2,27,137,184,38,151,51,17,168,51,71,
+        27,46,16,68,191>>}]
+3> 
+3> c(first).           
+{ok,first}
+4> fi
+file              file_io_server    file_server       filename          
+first             
+4> first:
+f/0            module_info/0  module_info/1  
+4> first:f().
+ok
+5> first:
+f/0            module_info/0  module_info/1  
+5> q().      
+ok
+6> teacher@nb:~/Desktop$ erlc first.erl
+teacher@nb:~/Desktop$ erl
+Erlang/OTP 19 [erts-8.3] [source] [64-bit] [smp:4:4] [async-threads:10] [kernel-poll:false]
+
+Eshell V8.3  (abort with ^G)
+1> l(first).
+{module,first}
+2> fi
+file              file_io_server    file_server       filename          
+first             
+2> q().  
+ok
+3> teacher@nb:~/Desktop$ erl
+Erlang/OTP 19 [erts-8.3] [source] [64-bit] [smp:4:4] [async-threads:10] [kernel-poll:false]
+
+Eshell V8.3  (abort with ^G)
+1> first:f().
+ok
+2> first:
+f/0            module_info/0  module_info/1  
+2> c(fi)     
+file              file_io_server    file_server       filename          
+first             
+2> c(first). 
+first.erl:10: Warning: variable 'B' is unused
+{ok,first}
+3> c(first).
+{ok,first}
+4> c(first).
+first.erl:15: function fst/1 already defined
+error
+5> c(first).
+{ok,first}
+6> first:fst({}).
+ok
+7> first:fst({1}).
+ok
+8> first:fst({1,1}).
+1
+9> first:fst({1,2}).
+1
+10> first:fst({1,2,3}).
+1
+11> c(first).          
+{ok,first}
+12> first:fst({1,2,3}).
+1
+13> first:fst({1,2}).  
+1
+14> first:fst({1}).  
+** exception error: no function clause matching  
+                    first:fst({1}) (first.erl, line 10)
+15> c(first).          
+{ok,first}
+16> first:fst({1,2,3}).
+1
+17> c(first).          
+{ok,first}
+18> first:eq(1,2).
+false
+19> first:eq(1,0).
+false
+20> first:eq(1,1).
+true
+21> first:eq(1,1.0).
+true
+22> c(first).       
+{ok,first}
+23> first:eq(1,1.0).
+false
+24> first:eq(1,1).  
+true
+25> c(first).       
+{ok,first}
+26> first:eq(1,1).
+true
+27> first:eq(1,1.0).
+false
+28> 

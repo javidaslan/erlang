@@ -6,7 +6,6 @@
 opmap3(F, L) ->
     Parent = self(),
     Pids = [spawn(fun() ->  Parent ! {self(), F(H)} end) || H <- L],
-    
     [receive 
 	 {I, Res} -> Res
      end || I <- Pids].
